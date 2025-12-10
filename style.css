@@ -1,0 +1,85 @@
+body {
+    background-color: #f4f1de;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0;
+
+    
+    background-image: url('img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.box {
+    height: 20vmin;
+    width: 20vmin;
+    font-size: 8vmin;
+    font-weight: bold;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+
+.box:active {
+    transform: scale(0.95);
+}
+
+#reset-btn, #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 20px;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+}
+
+#msg {
+    color: #222;
+    font-size: 8vmin;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hide {
+    display: none;
+}
+.symbol {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    pointer-events: none; 
+}
